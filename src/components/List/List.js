@@ -1,10 +1,13 @@
-import { useEffect, useState } from "react";
+import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { set } from '../../slices/pokemonList';
 import axios from 'axios';
 import { ItemWrap, Item } from './List.style';
 import Pokemon from "../Pokemon/Pokemon";
 
 function List() {
-  const [pokemons, setPokemons] = useState("");
+  const dispatch = useDispatch();
+  const newPokemonList = useSelector(state => state.pokemonList.list);
 
   useEffect(() => {
     const url = "https://unpkg.com/pokemons@1.1.0/pokemons.json";
@@ -12,8 +15,9 @@ function List() {
     const loadPokemonData = async () => {
       try {
         const resp = await axios.get(url);
-        console.log(resp.data.results);
-        setPokemons(resp.data.results);
+        const filteredPokemons = resp.data.results;
+        dispatch(set(filteredPokemons));
+        console.log(newPokemonList);
       } catch (error) {
         console.log("error", error);
       }
@@ -24,7 +28,7 @@ function List() {
 
   return (
     <ItemWrap>
-      {pokemons.length && pokemons.map((pokemon, index) => <Item key={index}><Pokemon pokemon={pokemon} /></Item>)}
+      {newPokemonList.length && newPokemonList.map((pokemon, index) => <Item key={index}><Pokemon pokemon={pokemon} /></Item>)}
     </ItemWrap>
   );
 }

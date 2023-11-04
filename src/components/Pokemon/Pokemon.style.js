@@ -1,6 +1,22 @@
 import styled from 'styled-components';
 
+export const IconWrap = styled.div`
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: none;
+  color: red;
+  font-size: 20px;
+  padding: 8px 16px 16px 16px;
+  cursor: pointer;
+
+  ${({ show }) => show && `
+    display: block;
+  `}
+`;
+
 export const Wrap = styled.div`
+  position: relative;
   width: 160px;
   height: 240px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -11,6 +27,10 @@ export const Wrap = styled.div`
 
   &:hover {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  
+  &:hover ${IconWrap} {
+    display: block;
   }
 `;
 
