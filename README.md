@@ -43,3 +43,11 @@ Aqui notei que alguns pokemons não estão exibindo a imagem e que alguns estão
 
 <img src="./prints/4.jpg" height="160" />
 <img src="./prints/5.jpg" height="160" />
+
+### Etapa 2 - Filtros
+
+- Criando componente de busca com campo de entrada que filtra os pokemons por nome ou número (Search.js).
+- Adicionando filtros no redux e fazendo a busca pelo nome ou número do pokemon.
+
+<img src="./prints/6.jpg" height="160" />
+<img src="./prints/7.jpg" height="160" />

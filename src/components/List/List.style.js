@@ -3,11 +3,11 @@ import styled from 'styled-components';
 export const ItemWrap = styled.ul`
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 16px 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  max-height: 80vh;
+  justify-content: flex-start;
+  max-height: calc(92vh - 100px);
   overflow: auto;
 
   &::-webkit-scrollbar {

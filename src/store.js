@@ -3,6 +3,6 @@ import pokemonList from './slices/pokemonList';
 
 export default configureStore({
   reducer: {
-    pokemonList: pokemonList,
+    pokemonList: pokemonList
   },
 });
