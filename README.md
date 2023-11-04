@@ -51,3 +51,9 @@ Aqui notei que alguns pokemons não estão exibindo a imagem e que alguns estão
 
 <img src="./prints/6.jpg" height="160" />
 <img src="./prints/7.jpg" height="160" />
+
+- Adicionando componente de listagem de filtros com função de filtrar por tipo (TypeList.js).
+- Algumas mudanças de nomes e estilos para adaptar aos novos componentes.
+
+<img src="./prints/8.jpg" height="160" />
+<img src="./prints/9.jpg" height="160" />

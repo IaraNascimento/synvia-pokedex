@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 export const Wrap = styled.div`
   position: relative;
-  margin: 24px 16px;
+  margin: 24px 0;
   min-width: 45%;
   width: 300px;
 `;

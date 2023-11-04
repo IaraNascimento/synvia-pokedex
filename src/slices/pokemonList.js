@@ -5,10 +5,11 @@ export const pokemonListSlice = createSlice({
   initialState: {
     list: [],
     filters: { search: '', types: [], favorite: false },
+    types: [],
   },
   reducers: {
     set: (state, action) => {
-      state.list = action.payload
+      state.list = action.payload;
     },
     favorite: (state, action) => {
       const pokemonIndex = state.list.findIndex((pokemon) => pokemon.name === action.payload.name);
@@ -21,10 +22,13 @@ export const pokemonListSlice = createSlice({
         favorite: action.payload.favorite,
       };
     },
+    setTypes: (state, action) => {
+      state.types = action.payload;
+    },
   },
 })
 
 // Action creators are generated for each case reducer function
-export const { set, favorite, setFilters } = pokemonListSlice.actions;
+export const { set, favorite, setFilters, setTypes } = pokemonListSlice.actions;
 
 export default pokemonListSlice.reducer;

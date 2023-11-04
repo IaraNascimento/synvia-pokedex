@@ -4,7 +4,7 @@ import { faHeart as emptyHeart } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { favorite } from '../../slices/pokemonList';
 import { Wrap, Image, Number, Name, IconWrap } from './Pokemon.style';
-import Type from '../Type/Type';
+import TypeBullet from '../TypeBullet/TypeBullet';
 
 function Pokemon(props) {
   const pokemon = props.pokemon;
@@ -19,7 +19,7 @@ function Pokemon(props) {
       <Image src={pokemon.sprites.large}></Image>
       <Number>Nº {pokemon.national_number}</Number>
       <Name>{pokemon.name}</Name>
-      {pokemon.type.length && pokemon.type.map((type, index) => <Type key={index} type={type} />)}
+      {pokemon.type.length && pokemon.type.map((type, index) => <TypeBullet key={index} type={type} />)}
     </Wrap>
   );
 }

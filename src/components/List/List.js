@@ -11,9 +11,12 @@ function List() {
   const originalPokemonList = useSelector(state => state.pokemonList.list);
   const filters = useSelector(state => state.pokemonList.filters);
 
-  const filterPokemonList = (pokemons, filters) => {
+  function filterPokemonList(pokemons, filters) {
     return pokemons.filter((pokemon) => {
-      return (pokemon.name.toLowerCase().includes(filters.search) || pokemon.national_number.includes(filters.search))
+      const pokemonNameOrNationalNumberFound = pokemon.name.toLowerCase().includes(filters.search) || pokemon.national_number.includes(filters.search);
+      const pokemonTypeFound = !!filters.types.length ? pokemon.type.some(pokemonType => filters.types.includes(pokemonType)) : true;
+
+      return pokemonNameOrNationalNumberFound && pokemonTypeFound;
     })
   }
 
@@ -24,6 +27,9 @@ function List() {
       try {
         const resp = await axios.get(url);
         const filteredPokemons = resp.data.results;
+        filteredPokemons.forEach((pok) => {
+          if (pok.name === 'Charizard') console.log(pok)
+        })
         dispatch(set(filteredPokemons));
         setPokemons(filteredPokemons);
       } catch (error) {
@@ -36,11 +42,11 @@ function List() {
 
   useEffect(() => {
     setPokemons(filterPokemonList(originalPokemonList, filters));
-  }, [filters])
+  }, [filters, originalPokemonList])
 
   return (
     <ItemWrap>
-      {pokemons.length && pokemons.map((pokemon, index) => <Item key={index}><Pokemon pokemon={pokemon} /></Item>)}
+      {!!pokemons.length && pokemons.map((pokemon, index) => <Item key={index}><Pokemon pokemon={pokemon} /></Item>)}
     </ItemWrap>
   );
 }
