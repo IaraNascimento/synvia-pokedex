@@ -18,12 +18,12 @@ Para construir as funcionalidades da primeira etapa, foram feitas as ações:
 - O componente de App.js foi refatorado para importar a lista
 - A requisição com axios para URL solicitada no projeto foi adicionada na lista
 
-![print 1](./prints/1.jpg =x250)
+![print 1](./prints/1.jpg){:height="250px"}
 
 - Foi criado um componente de exibição de pokemon para a listagem (Pokemon.js)
 - Para completar a exibição, foi criado o componente de marcação de tipo (Type.js)
 
-![print 2](./prints/2.jpg =x250)
+![print 2](./prints/2.jpg){:height="250px"}
 
 Aqui notei que alguns pokemons não estão exibindo a imagem e que alguns estão duplicados por conta do tipo. Então mais pra frente vou tentar ver uma forma de tratar isso, primeiramente vou tentar finalizar o desafio a tempo.
 
