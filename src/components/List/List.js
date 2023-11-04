@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from 'axios';
+import { ItemWrap, Item } from './List.style';
+import Pokemon from "../Pokemon/Pokemon";
 
 function List() {
   const [pokemons, setPokemons] = useState("");
@@ -10,6 +12,7 @@ function List() {
     const loadPokemonData = async () => {
       try {
         const resp = await axios.get(url);
+        console.log(resp.data.results);
         setPokemons(resp.data.results);
       } catch (error) {
         console.log("error", error);
@@ -20,9 +23,9 @@ function List() {
   }, []);
 
   return (
-    <ul>
-      {pokemons.length && pokemons.map((pokemon, index) => <li key={index}>{pokemon.name}</li>)}
-    </ul>
+    <ItemWrap>
+      {pokemons.length && pokemons.map((pokemon, index) => <Item key={index}><Pokemon pokemon={pokemon} /></Item>)}
+    </ItemWrap>
   );
 }
 
