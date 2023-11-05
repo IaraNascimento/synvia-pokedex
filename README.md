@@ -90,3 +90,5 @@ Se fosse "no mundo real" eu deixaria a funcionalidade redonda primeiro. Mas como
 - Desenvolvendo App.test.js para cobrir App.js.
 
 <img src="./prints/16.jpg" height="160" />
+
+- Recolocando babel no projeto para executar build.
