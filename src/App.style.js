@@ -6,7 +6,13 @@ export const Main = styled.main`
   max-width: 1200px;
 `;
 
-export const Container = styled.section`  
+export const TopContainer = styled.section`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+export const Container = styled.section`
   & >:first-child {
     display: inline-block;
     vertical-align: top;

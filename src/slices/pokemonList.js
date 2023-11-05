@@ -6,6 +6,7 @@ export const pokemonListSlice = createSlice({
     list: [],
     filters: { search: '', types: [], isFavorite: false },
     types: [],
+    sort: 'national_number',
   },
   reducers: {
     set: (state, action) => {
@@ -25,10 +26,13 @@ export const pokemonListSlice = createSlice({
     setTypes: (state, action) => {
       state.types = action.payload;
     },
+    setSort: (state, action) => {
+      state.sort = action.payload;
+    },
   },
 })
 
 // Action creators are generated for each case reducer function
-export const { set, favorite, setFilters, setTypes } = pokemonListSlice.actions;
+export const { set, favorite, setFilters, setTypes, setSort } = pokemonListSlice.actions;
 
 export default pokemonListSlice.reducer;

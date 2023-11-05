@@ -61,3 +61,10 @@ Aqui notei que alguns pokemons não estão exibindo a imagem e que alguns estão
 - Implentando filtro de favorito (toggle/switch) com respectiva lógica no redux. Aqui foi usado como referência do w3schools (https://www.w3schools.com/howto/howto_css_switch.asp) para os estilos.
 
 <img src="./prints/10.jpg" height="160" />
+
+- Criado um novo elemento com respectivo redux para lidar com a ordenação dos pokemons (Sorter.js).
+- A função de ordenação foi pega da web (https://stackoverflow.com/questions/1129216/sort-array-of-objects-by-string-property-value/16174180#comment2298229_1129270).
+- Foi feita uma função para pegar apenas a primeira ocorrência do pokemon, assim evitando duplicados.
+
+<img src="./prints/11.jpg" height="160" />
+<img src="./prints/12.jpg" height="160" />
