@@ -1,8 +1,7 @@
-import { render, screen } from '@testing-library/react';
+import { renderWithProviders } from './utils/test';
 import App from './App';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+test.only('renders learn react link', () => {
+  const { component } = renderWithProviders(<App />);
+  expect(component).toMatchSnapshot();
 });

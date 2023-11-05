@@ -21,8 +21,8 @@ function Sorter() {
       <Title>Ordenar por</Title>
       <SelectWrap>
         <Select name="select" onChange={handleSelect}>
-          {options && options.map((item) =>
-            <option value={item.value} selected={item.selected}>
+          {options && options.map((item, index) =>
+            <option key={index} value={item.value} selected={item.selected}>
               {item.label}
             </option>
           )}

@@ -74,3 +74,19 @@ Aqui notei que alguns pokemons não estão exibindo a imagem e que alguns estão
 - Cabeçalho vermelho adicionado com as imagens passadas no desafio.
 
 <img src="./prints/13.jpg" height="160" />
+
+### Etapa 4 - Testes
+
+Aqui tive que tomar a decisão de tratar as imagens e os pokemons que ocultei (duplicação) ou fazer os testes unitários. Acredito que consigo realizar ambas as coisas, mas por segurança vou optar por qual priorizar.
+
+Se fosse "no mundo real" eu deixaria a funcionalidade redonda primeiro. Mas como nesse teste está claro que será avaliada minhas habilidades com testes, optei por faze-los primeiro.
+
+- Rodando comando de análise de cobertura (`npm test -- --coverage --watchAll`).
+
+<img src="./prints/14.jpg" height="160" />
+<img src="./prints/15.jpg" height="160" />
+
+- Alterando algumas configurações para executar os testes.
+- Desenvolvendo App.test.js para cobrir App.js.
+
+<img src="./prints/16.jpg" height="160" />
