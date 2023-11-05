@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const Title = styled.h2`
   color: #999;
   font-size: 16px;
+  margin-bottom: 8px;
 `;
 
 export const List = styled.ul`

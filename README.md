@@ -57,3 +57,7 @@ Aqui notei que alguns pokemons não estão exibindo a imagem e que alguns estão
 
 <img src="./prints/8.jpg" height="160" />
 <img src="./prints/9.jpg" height="160" />
+
+- Implentando filtro de favorito (toggle/switch) com respectiva lógica no redux. Aqui foi usado como referência do w3schools (https://www.w3schools.com/howto/howto_css_switch.asp) para os estilos.
+
+<img src="./prints/10.jpg" height="160" />

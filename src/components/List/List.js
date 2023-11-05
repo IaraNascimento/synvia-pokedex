@@ -15,8 +15,9 @@ function List() {
     return pokemons.filter((pokemon) => {
       const pokemonNameOrNationalNumberFound = pokemon.name.toLowerCase().includes(filters.search) || pokemon.national_number.includes(filters.search);
       const pokemonTypeFound = !!filters.types.length ? pokemon.type.some(pokemonType => filters.types.includes(pokemonType)) : true;
+      const pokemonFavoriteFound = filters.isFavorite ? pokemon.isFavorite : true;
 
-      return pokemonNameOrNationalNumberFound && pokemonTypeFound;
+      return pokemonNameOrNationalNumberFound && pokemonTypeFound && pokemonFavoriteFound;
     })
   }
 
@@ -27,9 +28,6 @@ function List() {
       try {
         const resp = await axios.get(url);
         const filteredPokemons = resp.data.results;
-        filteredPokemons.forEach((pok) => {
-          if (pok.name === 'Charizard') console.log(pok)
-        })
         dispatch(set(filteredPokemons));
         setPokemons(filteredPokemons);
       } catch (error) {

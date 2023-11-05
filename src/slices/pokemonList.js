@@ -4,7 +4,7 @@ export const pokemonListSlice = createSlice({
   name: 'pokemonList',
   initialState: {
     list: [],
-    filters: { search: '', types: [], favorite: false },
+    filters: { search: '', types: [], isFavorite: false },
     types: [],
   },
   reducers: {
@@ -19,7 +19,7 @@ export const pokemonListSlice = createSlice({
       state.filters = {
         search: action.payload.search,
         types: action.payload.types,
-        favorite: action.payload.favorite,
+        isFavorite: action.payload.isFavorite,
       };
     },
     setTypes: (state, action) => {
