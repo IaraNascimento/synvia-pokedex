@@ -68,3 +68,9 @@ Aqui notei que alguns pokemons não estão exibindo a imagem e que alguns estão
 
 <img src="./prints/11.jpg" height="160" />
 <img src="./prints/12.jpg" height="160" />
+
+### Etapa 3 - Header
+
+- Cabeçalho vermelho adicionado com as imagens passadas no desafio.
+
+<img src="./prints/13.jpg" height="160" />

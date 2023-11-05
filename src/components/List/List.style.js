@@ -7,7 +7,7 @@ export const ItemWrap = styled.ul`
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  max-height: calc(92vh - 100px);
+  max-height: calc(92vh - 200px);
   overflow: auto;
 
   &::-webkit-scrollbar {

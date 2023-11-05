@@ -13,7 +13,7 @@ export const List = styled.ul`
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  max-height: calc(80vh - 100px);
+  max-height: calc(80vh - 200px);
   overflow: auto;
 
   &::-webkit-scrollbar {
