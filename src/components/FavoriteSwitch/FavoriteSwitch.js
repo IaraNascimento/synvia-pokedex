@@ -22,7 +22,7 @@ function FavoriteSwitch() {
           checked={filters.isFavorite}
           value={filters.isFavorite}
         />
-        <Slider></Slider>
+        <Slider />
       </Switch>
     </>
   );

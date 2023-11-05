@@ -47,7 +47,7 @@ function TypeList() {
     <>
       <Title>Filtrar por Tipo</Title>
       <List>
-        {!!types.length && types.map(mapTypes)}
+        {!!types?.length && types.map(mapTypes)}
       </ List>
     </>
   );

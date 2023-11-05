@@ -1,3 +1,382 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`App component should match snapshot 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <header
+        class="sc-fKgKDd flgrcA"
+      >
+        <div
+          class="sc-bCwene kSelQC"
+        >
+          <div>
+            <svg>
+              pokeball.svg
+            </svg>
+            <h1
+              class="sc-iwaiBT haSyGA"
+            >
+              Pokédex - Synvia - Teste: Iara Nascimento Sztybe
+            </h1>
+          </div>
+          <div>
+            <svg>
+              synvia-A.svg
+            </svg>
+            <svg
+              aria-hidden="true"
+              class="svg-inline--fa fa-right-from-bracket sc-cxNGUP iYzkJc"
+              data-icon="right-from-bracket"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+        </div>
+      </header>
+      <main
+        class="sc-hKFymg cpMxcM"
+      >
+        <section
+          class="sc-eCAqax kFEoSy"
+        >
+          <div
+            class="sc-bdnyFh ixZYgx"
+          >
+            <input
+              class="sc-gtsqUy AqVJw"
+              placeholder="Pesquisar por nome ou número"
+            />
+            <svg
+              aria-hidden="true"
+              class="svg-inline--fa fa-magnifying-glass sc-dlniIP dJsmkW"
+              data-icon="magnifying-glass"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+          <div
+            class="sc-iemXqs ddZdds"
+          >
+            <h2
+              class="sc-dIvsgl bswfFM"
+            >
+              Ordenar por
+            </h2>
+            <div
+              class="sc-hHEhDq dMVzRV"
+            >
+              <select
+                class="sc-dlMCtj bTWpm"
+                name="select"
+              >
+                <option
+                  value="national_number"
+                >
+                  Menor número primeiro
+                </option>
+                <option
+                  value="-national_number"
+                >
+                  Maior número primeiro
+                </option>
+                <option
+                  value="name"
+                >
+                  Ordem Alfabética
+                </option>
+                <option
+                  value="-name"
+                >
+                  Ordem Alfabética Inversa
+                </option>
+              </select>
+              <svg
+                aria-hidden="true"
+                class="svg-inline--fa fa-sort-down sc-kfYpNk ikhkJC"
+                data-icon="sort-down"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                viewBox="0 0 320 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M182.6 470.6c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-9.2-9.2-11.9-22.9-6.9-34.9s16.6-19.8 29.6-19.8H288c12.9 0 24.6 7.8 29.6 19.8s2.2 25.7-6.9 34.9l-128 128z"
+                  fill="currentColor"
+                />
+              </svg>
+            </div>
+          </div>
+        </section>
+        <section
+          class="sc-jSFipO caCIet"
+        >
+          <div>
+            <h2
+              class="sc-gKAaef kzSLpI"
+            >
+              Filtrar por Tipo
+            </h2>
+            <ul
+              class="sc-iCoHzw iKMfrf"
+            />
+            <h2
+              class="sc-pNWRh haogZE"
+            >
+              Filtrar Favoritos
+            </h2>
+            <label
+              class="sc-jrsKJM gepoDJ"
+            >
+              <input
+                class="sc-iqAbyq jLMNaY"
+                type="checkbox"
+                value="false"
+              />
+              <span
+                class="sc-kEqXeH kbGwyh"
+              />
+            </label>
+          </div>
+          <div>
+            <ul
+              class="sc-crzpnZ jwyiKQ"
+            />
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>,
+  "container": <div>
+    <header
+      class="sc-fKgKDd flgrcA"
+    >
+      <div
+        class="sc-bCwene kSelQC"
+      >
+        <div>
+          <svg>
+            pokeball.svg
+          </svg>
+          <h1
+            class="sc-iwaiBT haSyGA"
+          >
+            Pokédex - Synvia - Teste: Iara Nascimento Sztybe
+          </h1>
+        </div>
+        <div>
+          <svg>
+            synvia-A.svg
+          </svg>
+          <svg
+            aria-hidden="true"
+            class="svg-inline--fa fa-right-from-bracket sc-cxNGUP iYzkJc"
+            data-icon="right-from-bracket"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z"
+              fill="currentColor"
+            />
+          </svg>
+        </div>
+      </div>
+    </header>
+    <main
+      class="sc-hKFymg cpMxcM"
+    >
+      <section
+        class="sc-eCAqax kFEoSy"
+      >
+        <div
+          class="sc-bdnyFh ixZYgx"
+        >
+          <input
+            class="sc-gtsqUy AqVJw"
+            placeholder="Pesquisar por nome ou número"
+          />
+          <svg
+            aria-hidden="true"
+            class="svg-inline--fa fa-magnifying-glass sc-dlniIP dJsmkW"
+            data-icon="magnifying-glass"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+              fill="currentColor"
+            />
+          </svg>
+        </div>
+        <div
+          class="sc-iemXqs ddZdds"
+        >
+          <h2
+            class="sc-dIvsgl bswfFM"
+          >
+            Ordenar por
+          </h2>
+          <div
+            class="sc-hHEhDq dMVzRV"
+          >
+            <select
+              class="sc-dlMCtj bTWpm"
+              name="select"
+            >
+              <option
+                value="national_number"
+              >
+                Menor número primeiro
+              </option>
+              <option
+                value="-national_number"
+              >
+                Maior número primeiro
+              </option>
+              <option
+                value="name"
+              >
+                Ordem Alfabética
+              </option>
+              <option
+                value="-name"
+              >
+                Ordem Alfabética Inversa
+              </option>
+            </select>
+            <svg
+              aria-hidden="true"
+              class="svg-inline--fa fa-sort-down sc-kfYpNk ikhkJC"
+              data-icon="sort-down"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              viewBox="0 0 320 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M182.6 470.6c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-9.2-9.2-11.9-22.9-6.9-34.9s16.6-19.8 29.6-19.8H288c12.9 0 24.6 7.8 29.6 19.8s2.2 25.7-6.9 34.9l-128 128z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+        </div>
+      </section>
+      <section
+        class="sc-jSFipO caCIet"
+      >
+        <div>
+          <h2
+            class="sc-gKAaef kzSLpI"
+          >
+            Filtrar por Tipo
+          </h2>
+          <ul
+            class="sc-iCoHzw iKMfrf"
+          />
+          <h2
+            class="sc-pNWRh haogZE"
+          >
+            Filtrar Favoritos
+          </h2>
+          <label
+            class="sc-jrsKJM gepoDJ"
+          >
+            <input
+              class="sc-iqAbyq jLMNaY"
+              type="checkbox"
+              value="false"
+            />
+            <span
+              class="sc-kEqXeH kbGwyh"
+            />
+          </label>
+        </div>
+        <div>
+          <ul
+            class="sc-crzpnZ jwyiKQ"
+          />
+        </div>
+      </section>
+    </main>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
 exports[`renders learn react link 1`] = `undefined`;

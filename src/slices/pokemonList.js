@@ -1,13 +1,15 @@
 import { createSlice } from '@reduxjs/toolkit';
 
+export const initialState = {
+  list: [],
+  filters: { search: '', types: [], isFavorite: false },
+  types: [],
+  sort: 'national_number',
+};
+
 export const pokemonListSlice = createSlice({
   name: 'pokemonList',
-  initialState: {
-    list: [],
-    filters: { search: '', types: [], isFavorite: false },
-    types: [],
-    sort: 'national_number',
-  },
+  initialState,
   reducers: {
     set: (state, action) => {
       state.list = action.payload;
