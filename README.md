@@ -92,9 +92,11 @@ Se fosse "no mundo real" eu deixaria a funcionalidade redonda primeiro. Mas como
 <img src="./prints/16.jpg" height="160" />
 
 - Recolocando babel no projeto para executar build.
-- Refatorando test de App.
+- Refatorando testes de App.
 - Alterando novamente algumas configurações dos testes.
-- Criando test de FavoriteSwitch.
-- Criando test do Header.
+- Criando teste de FavoriteSwitch.
+- Criando teste do Header.
 
 <img src="./prints/17.jpg" height="160" />
+
+- Implementando teste das funções úteis do componente List.
