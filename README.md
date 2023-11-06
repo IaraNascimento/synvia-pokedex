@@ -6,6 +6,7 @@ Esse projeto foi iniciado dia 03/11/2023, às 21h.
 
 - `npm start`: modo desenvolvedor na porta 3000;
 - `npm test`: roda os testes;
+- `npm coverage`: roda os testes exibindo tabela de cobertura;
 - `npm run build`: constrói a versão de produção na pasta build.
 
 ### Ações iniciais
@@ -102,3 +103,6 @@ Se fosse "no mundo real" eu deixaria a funcionalidade redonda primeiro. Mas como
 - Implementando teste das funções úteis do componente List.
 - Testando componente de Pokemon.
 - Criando conteúdo de teste para o componente de busca por nome ou número.
+- Testando o básico dos últimos 3 componentes (Sorter, TypeBullet e TypeList).
+
+<img src="./prints/18.jpg" height="160" />

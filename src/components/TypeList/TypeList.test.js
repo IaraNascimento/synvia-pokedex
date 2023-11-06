@@ -2,11 +2,11 @@ import { render } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import configureStore from 'redux-mock-store';
 import { initialState } from '../../slices/pokemonList';
-import Sorter from './Sorter';
+import TypeList from './TypeList';
 
 const mockStore = configureStore([]);
 
-describe('Sorter component', () => {
+describe('TypeList component', () => {
   let store;
   let component;
 
@@ -17,7 +17,7 @@ describe('Sorter component', () => {
 
     component = render(
       <Provider store={store}>
-        <Sorter />
+        <TypeList />
       </Provider>
     );
   });
