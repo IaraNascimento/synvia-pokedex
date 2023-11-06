@@ -14,7 +14,7 @@ function Search() {
 
   return (
     <Wrap>
-      <SearchInput placeholder="Pesquisar por nome ou número"
+      <SearchInput data-testid="search-input" placeholder="Pesquisar por nome ou número"
         onChange={handleTyping} />
       <Icon icon={faSearch} />
     </Wrap>

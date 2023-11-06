@@ -12,11 +12,11 @@ function Pokemon(props) {
 
   return (
     <Wrap>
-      <IconWrap show={pokemon.isFavorite} onClick={() => dispatch(favorite(pokemon))} >
+      <IconWrap data-testid="wrap-icon" show={pokemon.isFavorite} onClick={() => dispatch(favorite(pokemon))} >
         {pokemon.isFavorite && <FontAwesomeIcon icon={faHeart} />}
         {!pokemon.isFavorite && <FontAwesomeIcon icon={emptyHeart} />}
       </IconWrap>
-      <Image src={pokemon.sprites.large}></Image>
+      <Image src={pokemon?.sprites?.large}></Image>
       <Number>Nº {pokemon.national_number}</Number>
       <Name>{pokemon.name}</Name>
       {pokemon.type.length && pokemon.type.map((type, index) => <TypeBullet key={index} type={type} />)}

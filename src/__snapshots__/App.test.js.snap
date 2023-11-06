@@ -54,6 +54,7 @@ Object {
           >
             <input
               class="sc-gtsqUy AqVJw"
+              data-testid="search-input"
               placeholder="Pesquisar por nome ou número"
             />
             <svg
@@ -215,6 +216,7 @@ Object {
         >
           <input
             class="sc-gtsqUy AqVJw"
+            data-testid="search-input"
             placeholder="Pesquisar por nome ou número"
           />
           <svg
@@ -378,5 +380,3 @@ Object {
   "unmount": [Function],
 }
 `;
-
-exports[`renders learn react link 1`] = `undefined`;

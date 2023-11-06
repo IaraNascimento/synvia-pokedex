@@ -100,3 +100,5 @@ Se fosse "no mundo real" eu deixaria a funcionalidade redonda primeiro. Mas como
 <img src="./prints/17.jpg" height="160" />
 
 - Implementando teste das funções úteis do componente List.
+- Testando componente de Pokemon.
+- Criando conteúdo de teste para o componente de busca por nome ou número.
